@@ -12,7 +12,7 @@ rapidoc_spec(
 )
 }
 \arguments{
-\item{spec_url}{Url to an openAPI specification}
+\item{spec_url}{Url to an OpenAPI specification}
 
 \item{fonts_css}{Path to the fonts css file if you want to use fonts other than the default one.}
 
@@ -23,13 +23,14 @@ See https://mrin9.github.io/RapiDoc/api.html for a list of available options.}
 }
 \value{
 large string containing the contents of \code{\link{rapidoc_index}()} with
-the appropriate speicification path changed to the \code{spec_url} value.
+the appropriate specification path changed to the \code{spec_url} value.
 }
 \description{
 Produces the content for a \code{index.html} file that will attempt to access a
 provided OpenAPI Specification URL.
 }
 \examples{
+\dontrun{
 if (interactive()) {
   slot1 <- '
   <img slot="logo"
@@ -40,5 +41,6 @@ if (interactive()) {
                slots = c(slot1),
                heading_text = "Google",
                allow_server_selection = FALSE)
+}
 }
 }
